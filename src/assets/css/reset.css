@@ -1,29 +1,59 @@
 @import "~normalize.css";
+@import "antd/dist/antd.css";
+/* @import "~ant-design/icons"; */
 
 /* 样式重置 */
-body, html, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, header, menu, section, p, input, td, th, ins {
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol,
+dl,
+dt,
+dd,
+head,
+menu,
+section,
+p,
+input,
+td,
+th,
+ins {
   padding: 0;
   margin: 0;
 }
 
-ul, ol, li {
+ul,
+ol,
+li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
-  color: rgb(196, 196, 196);
+  color: #666;
 }
 
 a:hover {
-  color: rgb(185, 185, 185);
+  color: #666;
+  text-decoration: underline;
 }
 
-i, em {
+i.em {
   font-style: normal;
 }
 
-input, textarea, button, select, a {
+input,
+textarea,
+button,
+select,
+a {
   outline: none;
   border: none;
 }
@@ -39,7 +69,18 @@ img {
 }
 
 /* 全局样式 */
+body,
+textarea,
+select,
+input,
+button {
+  /* font-size: 12px; */
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+}
 
+/* 超出内容自动显示省略号 */
 .text-nowrap {
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -54,4 +95,90 @@ img {
 .wrap-v2 {
   width: 980px;
   margin: 0 auto;
+}
+
+/* 精灵图 */
+
+.sprite_01 {
+  background: url(../images/sprite_01.png) no-repeat 0 9999px;
+}
+
+.sprite_02 {
+  background: url(../images/sprite_02.png) no-repeat 0 9999px;
+}
+
+.sprite_covor {
+  background: url(../images/sprite_cover.png) no-repeat 0 9999px;
+}
+
+.sprite_icon {
+  background: url(../images/sprite_icon.png) no-repeat 0 9999px;
+}
+
+.sprite_icon2 {
+  background: url(../images/sprite_icon2.png) no-repeat 0 9999px;
+}
+
+.sprite_icon3 {
+  background: url(../images/sprite_icon3.png) no-repeat 0 9999px;
+}
+
+.sprite_button {
+  background: url(../images/sprite_button.png) no-repeat 0 9999px;
+}
+
+.sprite_button2 {
+  background: url(../images/sprite_button2.png) no-repeat 0 9999px;
+}
+
+.sprite_table {
+  background: url(../images/sprite_table.png) no-repeat 0 9999px;
+}
+
+.sprite_playerbar {
+  background: url(../images/playbar.png) no-repeat 0 9999px;
+}
+
+.sprite_down {
+  background: url(../images/sprite_down.png) no-repeat 0 9999px;
+}
+
+.sprite_singer {
+  background: url(../images/sprite_singer.png) no-repeat 0 9999px;
+}
+
+.sprite_layer {
+  background: url(../images/sprite_layer.png) no-repeat 0 9999px;
+}
+
+.sprite_logo {
+  background: url(../images/logo.png) no-repeat 0 9999px;
+}
+
+.radio_slide {
+  background: url(../images/radio_slide.png) no-repeat 0 9999px;
+}
+
+/* 图片内嵌边框 */
+.img_cover {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-indent: -9999px;
+  background: url(../images/sprite_cover.png) no-repeat -145px -57px;
+}
+
+.lyric {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* 分页组件 居中 */
+.ant-pagination {
+  width: 100%;
+  text-align: center;
 }

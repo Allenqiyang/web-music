@@ -11,7 +11,7 @@ const App = memo(() => {
   return (
     <HashRouter>
       <AppHeader/>
-      {renderRoutes(routes)}
+        {renderRoutes(routes)}
       <AppFooter/>
     </HashRouter>
   )
