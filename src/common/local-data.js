@@ -4,7 +4,7 @@
 export const headerLinks = [
   {
     title: "发现音乐",
-    link: "/",
+    link: "/discover",
   },
   {
     title: "我的音乐",
@@ -76,7 +76,7 @@ export const footerImages = [
 ];
 
 // discover中的数据
-export const dicoverMenu = [
+export const discoverMenu = [
   {
     title: "推荐",
     link: "/discover/recommend",

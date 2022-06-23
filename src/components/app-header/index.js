@@ -43,8 +43,8 @@ const AppHeader = memo(() => {
         </HeaderLeft>
         <HeaderRight>
           <Input className='search' placeholder="Music/User/Radio" prefix={<SearchOutlined/>}/>
-          <div className='button-center'>Creator</div>
-          <div className='button-login'>Login</div>
+          <div className='button-center'>创作者中心</div>
+          <div className='button-login'>登录</div>
         </HeaderRight>
       </div>
       <div className='divider'>

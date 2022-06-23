@@ -1,7 +1,7 @@
 import React, { memo } from 'react'
 import { renderRoutes } from 'react-router-config'
 
-import routes from './router'
+import routes from './routes'
 
 import AppFooter from './components/app-footer'
 import AppHeader from './components/app-header'
