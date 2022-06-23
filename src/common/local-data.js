@@ -103,7 +103,6 @@ export const discoverMenu = [
   },
 ];
 
-// 热门主播（没有找到数据接口）
 export const hotRadios = [
   {
     picUrl: "http://p1.music.126.net/H3QxWdf0eUiwmhJvA4vrMQ==/1407374893913311.jpg",
