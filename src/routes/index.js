@@ -35,25 +35,25 @@ const routes = [
         component: Recommend
       },
       {
-        path: "discover/toplist",
+        path: "/discover/toplist",
         component: Ranking
       },
       {
-        path: "discover/playlist",
+        path: "/discover/playlist",
         component: Songs
       },
       {
-        path: "discover/djradio",
+        path: "/discover/djradio",
         component: Djradio
       },
       {
-        path: "discover/artist",
+        path: "/discover/artist",
         component: Artist
       },
       {
-        path: "discover/album",
+        path: "/discover/album",
         component: Album
-      },
+      }
     ]
   },
   {

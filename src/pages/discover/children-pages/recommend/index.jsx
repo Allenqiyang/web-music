@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 
 const Recommend = memo(() => {
   return (
-    <div>Recommend</div>
+    <h3>Recommend</h3>
   )
 })
 

@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 
 const Songs = memo(() => {
   return (
-    <div>Songs</div>
+    <h3>Songs</h3>
   )
 })
 

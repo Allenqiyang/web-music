@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 
 const Djradio = memo(() => {
   return (
-    <div>Djradio</div>
+    <h3>Djradio</h3>
   )
 })
 

@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 
 const Album = memo(() => {
   return (
-    <div>Album</div>
+    <h3>Album</h3>
   )
 })
 

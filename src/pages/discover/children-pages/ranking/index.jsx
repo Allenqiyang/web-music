@@ -2,7 +2,7 @@ import React, { memo } from 'react'
 
 const Ranking = memo(() => {
   return (
-    <div>Ranking</div>
+    <h3>Ranking</h3>
   )
 })
 
