@@ -12,7 +12,7 @@ instance.interceptors.request.use(config => {
   // 1. 发送网络请求时，在界面中间显示Loading组件
   // 2. 某一些请求需要token，若没有就跳转到登录页面
   // 3. params/data序列化的操作
-  console.log("request intercept")
+  // console.log("request intercept")
   return config
 }, err => {
 
