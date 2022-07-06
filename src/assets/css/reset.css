@@ -182,3 +182,8 @@ button {
   width: 100%;
   text-align: center;
 }
+
+::selection {
+  background-color: #89c4ff74;
+  color: #4c4c4c;
+}
