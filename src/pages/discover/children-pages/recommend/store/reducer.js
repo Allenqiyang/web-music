@@ -4,7 +4,8 @@ import * as actionTypes from './constants'
 
 const defaultState = Map({
   topBanners: [],
-  hotRecommends: []
+  hotRecommends: [],
+  newAlbums: []
 })
 
 function reducer(state = defaultState, action) {
