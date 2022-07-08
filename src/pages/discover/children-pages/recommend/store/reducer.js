@@ -14,6 +14,8 @@ function reducer(state = defaultState, action) {
       return state.set("topBanners", action.topBanners)
     case actionTypes.changeHotRecommend:
       return state.set("hotRecommends", action.hotRecommends)
+    case actionTypes.changeNewAlbum:
+      return state.set("newAlbums", action.newAlbums)
     default:
       return state
   }

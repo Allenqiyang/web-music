@@ -12,6 +12,11 @@ const changeHotRecommendAction = res => ({
   hotRecommends: res.result
 })
 
+const changeNewAlbumAction = res => ({
+  type: actionTypes.changeNewAlbum,
+  newAlbums: res.albums
+})
+
 export const getTopBannerAction = () => {
   return dispatch => {
     getTopBanners().then(res => {
@@ -30,8 +35,8 @@ export const getHotRecommendAction = limit => {
 
 export const getNewAlbumAction = limit => {
   return dispatch => {
-    getNewAlbum().then(res => {
-      dispatch()
+    getNewAlbum(limit).then(res => {
+      dispatch(changeNewAlbumAction(res))
     })
   }
 }

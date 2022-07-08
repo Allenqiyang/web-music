@@ -1,19 +1,30 @@
 import React, { memo, useEffect } from 'react'
-
-import { getNewAlbum } from '@/services/recommend'
+import { useDispatch, useSelector, shallowEqual } from 'react-redux'
 
 import ThemeHeaderRCM from '@/components/theme-header-rcm'
+import { getNewAlbumAction } from '../../store/actionCreators'
 
 const NewAlbum = memo(() => {
+  const {newAlbums} = useSelector(state => ({
+    newAlbums: state.getIn(["recommend", "newAlbums"])
+  }), shallowEqual)
+
+  const dispatch = useDispatch()
+
   useEffect(() => {
-    getNewAlbum(10).then(res => {
-      console.log(res)
-    })
-  })
+    dispatch(getNewAlbumAction(10))
+  }, [dispatch])
 
   return (
     <div>
       <ThemeHeaderRCM title="新碟上架"/>
+      <div>
+        {
+          newAlbums.map(item => {
+            return <div key={item.id}>{item.name}</div>
+          })
+        }
+      </div>
     </div>
   )
 })
