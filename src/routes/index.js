@@ -1,6 +1,6 @@
 import React from "react"
-
 import { Redirect } from "react-router-dom"
+
 import Discover from "../pages/discover"
 import Friends from "../pages/friend"
 import Mine from "../pages/mine"
