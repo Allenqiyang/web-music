@@ -17,7 +17,9 @@ const Recommend = memo(() => {
           <NewAlbum/>
           <RecommendRanking/>
         </RecommendLeft>
-        <RecommendRight></RecommendRight>
+        <RecommendRight>
+          
+        </RecommendRight>
       </Content>
     </RecommendWrapper>
   )

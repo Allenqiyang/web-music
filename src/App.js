@@ -5,9 +5,10 @@ import { renderRoutes } from 'react-router-config'
 import routes from './routes'
 import store from './store'
 
+import { HashRouter } from 'react-router-dom'
 import AppFooter from './components/app-footer'
 import AppHeader from './components/app-header'
-import { HashRouter } from 'react-router-dom'
+import AppPlayerBar from './pages/player/app-player-bar'
 
 const App = memo(() => {
   return (
@@ -16,6 +17,7 @@ const App = memo(() => {
         <AppHeader/>
           {renderRoutes(routes)}
         <AppFooter/>
+        <AppPlayerBar/>
       </HashRouter>
     </Provider>
   )

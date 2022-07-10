@@ -183,6 +183,10 @@ button {
   text-align: center;
 }
 
+.sprite_player {
+  background: url(../images/playbar_sprite.png) no-repeat 0 9999px;
+}
+
 ::selection {
   background-color: #89c4ff74;
   color: #4c4c4c;
