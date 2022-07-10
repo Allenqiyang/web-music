@@ -9,6 +9,8 @@ import { getTopListAction } from '../../store/actionCreators'
 
 const RecommendRanking = memo(() => {
   // 接口用不了了请求不了数据我只能写固定数据了☹️
+  const upImageUrl = "http://p1.music.126.net/pcYHpMkdC69VVvWiynNklA==/109951166952713766.jpg"
+  const upName = "飙升榜"
   const upList = [
     "该死的泪",
     "愚忠",
@@ -21,6 +23,8 @@ const RecommendRanking = memo(() => {
     "泡沫",
     "每当我"
   ]
+  const newImageUrl = "http://p2.music.126.net/wVmyNS6b_0Nn-y6AX8UbpQ==/109951166952686384.jpg"
+  const newName = "新歌榜"
   const newList = [
     "给你一瓶魔法药水",
     "我多想拥抱你",
@@ -33,6 +37,8 @@ const RecommendRanking = memo(() => {
     "别怕变老 (LIVE版)",
     "清风调(LIVE版)"
   ]
+  const originImageUrl = "http://p2.music.126.net/iFZ_nw2V86IFk90dc50kdQ==/109951166961388699.jpg"
+  const oriName = "原创榜"
   const originList = [
     "黑本子(Black Benz)",
     "闹剧",
@@ -63,9 +69,9 @@ const RecommendRanking = memo(() => {
     <RankingWrapper>
       <ThemeHeaderRCM title="榜单"/>
       <div className='tops'>
-        <TopRanking info={upRanking} index={0} list={upList}/>
-        <TopRanking info={newRanking} index={1} list={newList}/>
-        <TopRanking info={originRanking} index={2} list={originList}/>
+        <TopRanking info={upRanking} index={0} list={upList} image={upImageUrl} name={upName}/>
+        <TopRanking info={newRanking} index={1} list={newList} image={newImageUrl} name={newName}/>
+        <TopRanking info={originRanking} index={2} list={originList} image={originImageUrl} name={oriName}/>
       </div>
     </RankingWrapper>
   )

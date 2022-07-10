@@ -5,17 +5,16 @@ import {getSizeImage} from "@/utils/data-format"
 import { TopRankingWrapper } from './style'
 
 const TopRanking = memo((props) => {
-  const {info, index, list} = props
-  console.log(info)
+  const {info, index, list, image, name} = props
   return (
     <TopRankingWrapper>
       <div className='header'>
         <div className='image'>
-          <img src={getSizeImage(info[index].coverImgUrl)} alt="" />
+          <img src={getSizeImage(image)} alt="" />
           <a href='/todo' className='image-cov'> </a>
         </div>
         <div className='info'>
-          <a href='/todo'>{info[index].name}</a>
+          <a href='/todo'>{name}</a>
           <div>
             <button className='btn play sprite_02'></button>
             <button className='btn favor sprite_02'></button>
