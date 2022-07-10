@@ -24,9 +24,10 @@ export function getNewAlbum(limit) {
   })
 }
 
+// 网易云这一块的接口用不了了☹️
 export function getTopList(idx) {
   return request({
-    url: "/top/list",
+    url: "/toplist",
     params: {
       idx
     }

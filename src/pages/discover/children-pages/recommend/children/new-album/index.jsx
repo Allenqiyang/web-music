@@ -44,7 +44,7 @@ const NewAlbum = memo(() => {
             }
           </Carousel>
         </div>
-        <button 
+        <button
           className="arrow arrow-right sprite_02"
           onClick={() => pageRef.current.next()}
         ></button>
