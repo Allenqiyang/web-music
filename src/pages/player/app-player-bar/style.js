@@ -123,6 +123,7 @@ export const Operator = styled.div`
   .btn {
     width: 25px;
     height: 25px;
+    cursor: pointer;
   }
 
   .favor {
