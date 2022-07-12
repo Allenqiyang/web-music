@@ -1,137 +1,95 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const FooterWrapper = styled.div`
-  /* justify-content: space-between; */
-
-  font-size: 12px;
-  height: 173px;
+export const AppFooterWrapper = styled.div`
+  height: 172px;
   background-color: #f2f2f2;
+  color: #666;
   border-top: 1px solid #d3d3d3;
 
   .content {
     display: flex;
-    width: 980px;
-    margin: 0px auto;
     justify-content: space-between;
+    align-items: center;
   }
-`;
+`
 
 export const FooterLeft = styled.div`
   padding-top: 15px;
+  line-height: 24px;
 
-  .item.links {
-    width: 520px;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .links-item {
-    display: inline-block;
-
+  .link {
     a {
       color: #999;
     }
-    span {
+
+    .line {
       margin: 0 10px;
       color: #999;
     }
   }
 
-  .text {
-    p {
-      margin: 5px 0;
-    }
+  .copyright {
     span {
-      margin: 0 5px;
+      margin-right: 15px;
     }
   }
-`;
+`
 
-export const FooterRight = styled.div`
-  padding-left: 10px;
+export const FooterRight = styled.ul`
+  display: flex;
 
-  .links {
-    position: relative;
-    top: 10%;
+  .item {
     display: flex;
-    justify-content: space-around;
-    width: 420px;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 40px;
 
-    .item {
-      background: url(${require("@/assets/images/sprite_footer_01.png")}) no-repeat;
-      display: inline-block;
+    .link {
+      display: block;
       width: 50px;
       height: 45px;
-      background-size: 104px 545px;
+
+      background-image: url(${require("@/assets/img/sprite_footer_02.png")});
+      background-size: 110px 450px;
     }
 
-    & :nth-child(1) .item {
-      background-position: -60px -451px;
+    :nth-child(1) .link {
+      background-position: -60px -101px;
     }
-
-    & :nth-child(2) .item {
-      background-position: -60px -100px;
-    }
-
-    & :nth-child(3) .item {
+    :nth-child(2) .link {
       background-position: 0 0;
     }
-
-    & :nth-child(4) .item {
+    :nth-child(2) .link {
       background-position: -60px -50px;
     }
-
-    & :nth-child(5) .item {
-      background-position: 0 -100px;
+    :nth-child(2) .link {
+      background-position: 0 -101px;
     }
 
     .title {
-      background: url(${require("@/assets/images/sprite_footer_02.png")}) no-repeat;
-      display: inline-block;
-      text-align: center;
-      background-size: 170px 153px;
+      margin-top: 5px;
+      display: block;
       width: 52px;
-      height: 20px;
+      height: 10px;
+      background-image: url(${require("@/assets/img/sprite_footer_01.png")});
+      background-size: 180px 100px;
     }
 
-    & :nth-child(1) .title {
-      width: 72px;
-      background-position: -1px -119px;
-      transform: translateX(-10%);
+    :nth-child(1) .title {
+      background-position: -1px -90px;
     }
-    & :nth-child(2) .title {
-      background-position: -5px -100px;
+    :nth-child(2) .title {
+      background-position: 0 0;
+      margin-top: 7px;
     }
-    & :nth-child(3) .title {
-      /* background-position: 0px,0px; */
+    :nth-child(3) .title {
+      background-position: 0 -54px;
+      margin-top: 6px;
     }
-    & :nth-child(4) .title {
-      background-position: -15px -60px;
-      transform: translateX(20%);
-    }
-    & :nth-child(5) .title {
-      background-position: -5px -80px;
+
+    :nth-child(4) .title {
+      background-position: -1px -72px;
+      margin-top: 6px;
     }
   }
-
-  /* .links {
-    display: flex;
-    justify-content: space-between;
-
-    .unit {
-      display: block;
-      background: url(${require("@/assets/images/sprite_footer_01.png")}) no-repeat -1px -902px;
-      width: 88px;
-      height: 88px;
-      background-size: 50px 45px;
-    }
-
-    .title {
-      display: block;
-      width: 132px;
-      height: 21px;
-      background: url(${require("@/assets/images/sprite_footer_02.png")}) no-repeat -1px -238px;
-      background-size: 72px 14px;
-    }
-  } */
-`;
+`

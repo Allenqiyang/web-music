@@ -1,35 +1,43 @@
-import request from './request'
+import request from "./axios";
 
-export function getTopBanners() {
+export function getTopBanner() {
   return request({
-    url: '/banner'
+    url: "/banner"
   })
 }
 
-export function getHotRecommends(limit) {
+export function getHotRecommend() {
   return request({
-    url: "/personalized",
-    params: {
-      limit
-    }
+    url: "/personalized"
   })
 }
 
-export function getNewAlbum(limit) {
+export function getNewAlbum(limit, offset) {
   return request({
     url: "/top/album",
     params: {
-      limit
+      limit,
+      offset
     }
   })
 }
 
-// 网易云这一块的接口用不了了☹️
 export function getTopList(idx) {
   return request({
-    url: "/toplist",
+    url: "/top/list",
     params: {
       idx
+    }
+  })
+}
+
+
+export function getArtistList(limit, cat) {
+  return request({
+    url: "/artist/list",
+    params: {
+      cat,
+      limit
     }
   })
 }

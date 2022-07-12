@@ -12,6 +12,7 @@ export const TopMenu = styled.div`
   padding-left: 180px;
   position: relative;
   top: -4px;
+
   .item {
     a {
       display: inline-block;
@@ -20,6 +21,7 @@ export const TopMenu = styled.div`
       padding: 0 13px;
       margin: 7px 17px 0;
       color: #fff;
+
       &:hover, &.active {
         text-decoration: none;
         background-color: #9B0909;
